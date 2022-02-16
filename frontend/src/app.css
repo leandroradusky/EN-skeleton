@@ -1,0 +1,73 @@
+/* Write your global styles here, in PostCSS syntax */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:root {
+  /* Colors */
+  --land: #F5F0E4;
+  --ocean: #53A2DE;
+  --blue: #2196f3;
+  --grey: #999;
+  --black-05: rgba(0, 0, 0, 0.05);
+  --black-10: rgba(0, 0, 0, 0.1);
+  --shadow-small: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-large: 0 8px 20px rgba(0,0,0,0.19), 0 4px 6px rgba(0,0,0,0.23);
+  --chart-width: 540px;
+  --chart-height: 480px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 28;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+a {
+  color: var(--blue);
+}
+
+select {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.legend {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 12px auto;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 6px;
+}
+
+.legend data {
+  grid-column: 1 / -1;
+  font-size: 36px;
+}
