@@ -1,4 +1,4 @@
-# CANotify
+# EN-skeleton
 
 ## Setup
 
