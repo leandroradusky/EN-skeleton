@@ -1,7 +1,4 @@
-export const backendUrl =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:8000'
-    : 'https://canotify-stg.instedd.org'
+export const backendUrl = 'http://localhost:8000'
 
 export const getData = async () => {
   let response = await fetch(`${backendUrl}/api/time_serie/cases`)
